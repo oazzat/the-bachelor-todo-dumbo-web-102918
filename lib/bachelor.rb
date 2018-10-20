@@ -57,5 +57,6 @@ def get_average_age_for_season(data, season)
       end
       puts total
       puts counter
+      puts total/counter
       return total/counter
 end
