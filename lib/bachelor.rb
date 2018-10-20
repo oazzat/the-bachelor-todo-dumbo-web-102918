@@ -13,9 +13,9 @@ end
 
 def get_contestant_name(data, occupation)
   
-    data.each do |season|
+    data.each do |key,season|
       season.each do |hash|
-        binding.pry
+        
       if hash["occupation"] == occupation
         return hash["name"]
       end
