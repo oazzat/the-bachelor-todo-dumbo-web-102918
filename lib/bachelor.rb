@@ -52,11 +52,11 @@ def get_average_age_for_season(data, season)
       total = 0
       counter = 0
       data[season].each do |hash|
-        total += hash["age"].to_i
+        total += hash["age"].to_f
         counter += 1
       end
       puts total
       puts counter
       puts total.to_f/counter
-      return total/counter
+      return total/counter.to_i
 end
