@@ -25,11 +25,12 @@ def get_contestant_name(data, occupation)
 end
 
 def count_contestants_by_hometown(data, hometown)
+  counter = 0
   data.each do |key,season|
       season.each do |hash|
         
-      if hash["occupation"] == occupation
-        return hash["name"]
+      if hash["hometown"] == hometown
+        counter += 1
       end
     end
   end
