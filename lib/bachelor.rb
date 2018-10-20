@@ -12,14 +12,12 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  data.each do |array|
-    array.each do |hash|
-      binding.pry
+    data[1].each do |hash|
       if hash["occupation"] == occupation
         return hash["name"]
       end
     end
-  end
+  
   return "word"
 end
 
