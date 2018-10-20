@@ -55,5 +55,5 @@ def get_average_age_for_season(data, season)
         total += hash["age"].to_f
         counter += 1
       end
-      return total/counter
+      return total/counter.to_i
 end
