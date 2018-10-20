@@ -14,11 +14,12 @@ end
 def get_contestant_name(data, occupation)
   
     data.each do |season|
-      binding.pry
+      season.each do |hash|
       if hash["occupation"] == occupation
         return hash["name"]
       end
     end
+  end
   
   return "word"
 end
